@@ -32,6 +32,10 @@ function showContent() {
     console.log("Autoplay blocked — user must interact first.");
   });
 }
+document.addEventListener("click", function() {
+    const music = document.getElementById("bg-music");
+    music.play();
+  });
 
 function createHeart() {
   const heart = document.createElement("div");
